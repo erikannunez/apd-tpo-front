@@ -1,0 +1,187 @@
+<!doctype html>
+<html class="no-js" lang="es">
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  <title>Catálogo de Artículos | Das Verrückte Lagerhaus</title>
+  <meta name="description" content="TPO de la materia Aplicaciones Distribuidas.">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
+  <link rel="icon" href="/favicon.ico" type="image/x-icon">
+  <link rel="manifest" href="/site.webmanifest">
+  <link rel="apple-touch-icon" href="/icon.png">
+  <link rel="stylesheet" href="/css/normalize.css">
+  <link rel="stylesheet" href="/css/bootstrap.min.css">
+  <link rel="stylesheet" href="/fontawesome/css/all.css">
+  <link rel="stylesheet" href="/css/main.css">
+</head>
+
+<body>
+  <!--[if lte IE 9]>
+    <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="https://browsehappy.com/">upgrade your browser</a> to improve your experience and security.</p>
+    <![endif]-->
+    <nav class="navbar navbar-expand-md navbar-light bg-light sticky-top">
+      <a class="navbar-brand" href="/index.html"><img src="/img/logo_150x46.png" width="150" height="46"/></a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#menu" aria-controls="menu" aria-expanded="false" aria-label="Desplegar menú">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="menu">
+        <ul class="navbar-nav mr-auto">
+          <li class="nav-item active">
+            <a class="nav-link" href="#">Inicio <span class="sr-only">(current)</span></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="/catalogo/articulos.html">Catálogo</a>
+          </li>
+
+        </ul>
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="/login.html"><span class="d-md-none">Ingresar</span><i class="fas fa-user-circle fa-2x d-none d-md-block"></i></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="/checkout.html"><span class="d-md-none">Carrito</span><i class="fas fa-shopping-cart fa-2x d-none d-md-block"></i></a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+
+    <main role="main" class="container">
+
+      <section id="checkout">
+<div class="row">
+        <div class="col-md-4 order-md-2 mb-4">
+          <h4 class="d-flex justify-content-between align-items-center mb-3">
+            <span class="text-muted">Su carrito</span>
+            <span class="badge badge-secondary badge-pill">3</span>
+          </h4>
+          <ul class="list-group mb-3">
+            <li class="list-group-item d-flex justify-content-between lh-condensed">
+              <div>
+                <h6 class="my-0">Articulo 1</h6>
+                <small class="text-muted">Cantidad: <span class="quantity">10</span></small>
+              </div>
+              <span class="text-muted">$12</span>
+            </li>
+            <li class="list-group-item d-flex justify-content-between lh-condensed">
+              <div>
+                <h6 class="my-0">Articulo 2</h6>
+                <small class="text-muted">Cantidad: <span class="quantity">10</span></small>
+              </div>
+              <span class="text-muted">$8</span>
+            </li>
+            <li class="list-group-item d-flex justify-content-between lh-condensed">
+              <div>
+                <h6 class="my-0">Articulo 3</h6>
+                <small class="text-muted">Cantidad: <span class="quantity">10</span></small>
+              </div>
+              <span class="text-muted">$5</span>
+            </li>
+            <li class="list-group-item d-flex justify-content-between">
+              <span>Total (AR$)</span>
+              <strong>$20</strong>
+            </li>
+          </ul>
+
+        </div>
+        <div class="col-md-8 order-md-1">
+          <h4 class="mb-3">Dirección de envío</h4>
+          <form class="needs-validation" novalidate="">
+
+            <div class="mb-3">
+              <label for="address">Calle y número</label>
+              <input type="text" class="form-control" id="address" placeholder="Calle Principal 123" required="">
+              <div class="invalid-feedback">
+                Por favor, indique su dirección de envío.
+              </div>
+            </div>
+
+            <div class="mb-3">
+              <label for="address2">Piso y Departamento <span class="text-muted">(Opcional)</span></label>
+              <input type="text" class="form-control" id="address2" placeholder="20 H">
+            </div>
+
+            <div class="row">
+              <div class="col-md-5 mb-3">
+                <label for="country">Provincia</label>
+                <select class="custom-select d-block w-100" id="country" required="">
+                  <option value="">Seleccione...</option>
+                  <option>Ciudad Autónoma de Buenos Aires</option>
+                </select>
+                <div class="invalid-feedback">
+                  Por favor, seleccione una provincia válida.
+                </div>
+              </div>
+              <div class="col-md-4 mb-3">
+                <label for="state">Ciudad</label>
+                <select class="custom-select d-block w-100" id="state" required="">
+                  <option value="">Seleccione...</option>
+                  <option>Ciudad Autónoma de Buenos Aires</option>
+                </select>
+                <div class="invalid-feedback">
+                  Por favor, seleccione una ciudad válida.
+                </div>
+              </div>
+              <div class="col-md-3 mb-3">
+                <label for="zip">Código Postal</label>
+                <input type="text" class="form-control" id="zip" placeholder="" required="">
+                <div class="invalid-feedback">
+                  El código postal es requerido.
+                </div>
+              </div>
+            </div>
+            <hr class="mb-4">
+            <button class="btn btn-primary btn-lg btn-block" type="submit">Confirmar pedido</button>
+          </form>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="container-fluid">
+    <div class="container">
+      <div class="row">
+        <div class="col-xs-12 col-lg-4">
+          <p><strong>Das Verrückte Lagerhaus</strong><p>
+            <p>
+              Lima 775 - C1073AAO<br/> 
+              Ciudad Autónoma de Buenos Aires<br/>
+              <a href="mailto:info@dasverrucktelagerhaus.com">info@dasverrucktelagerhaus.com</a><br/>
+              Tel: 0800-122-8233 / (5411) 4000-7600</p>
+            </div>
+            <div class="col-xs-12 col-lg-4">
+              <p><strong>Aplicaciones Distribuidas</strong>
+                <p>1° Cuatrimestre 2018</p>
+                <strong>Profesores</strong>
+                <ul>
+                  <li>Godio, Claudio</li>
+                  <li>Tam, Juan</li>
+                </ul>
+              </p>
+            </div>
+            <div class="col-xs-12 col-lg-4">
+              <p><strong>Integrantes</strong><br/>
+                Grupo Nro. 9
+                <ul>
+                  <li>Battaglino, Agustín</li>
+                  <li>Fels, Francisco</li>
+                  <li>Melaragno, Mariel</li>
+                  <li>Nuñez, Erica</li>
+                </ul>
+              </p>
+            </div>
+          </div>    
+          <hr/>
+          <p>© Das Verrückte Lagerhaus 2017-2018</p>   
+        </div>
+      </footer>
+      <script src="/js/vendor/modernizr-3.6.0.min.js"></script>
+      <script src="/js/vendor/jquery-3.3.1.min.js"></script>
+      <script src="/js/vendor/bootstrap.min.js"></script>
+      <script src="/js/plugins.js"></script>
+      <script src="/js/main.js"></script>
+    </body>
+    </html>
