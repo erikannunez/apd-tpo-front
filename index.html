@@ -9,12 +9,12 @@
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
   <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
   <link rel="icon" href="/favicon.ico" type="image/x-icon">
-  <link rel="manifest" href="site.webmanifest">
-  <link rel="apple-touch-icon" href="icon.png">
-  <link rel="stylesheet" href="css/normalize.css">
-  <link rel="stylesheet" href="css/bootstrap.min.css">
-  <link rel="stylesheet" href="fontawesome/css/all.css">
-  <link rel="stylesheet" href="css/main.css">
+  <link rel="manifest" href="/site.webmanifest">
+  <link rel="apple-touch-icon" href="/icon.png">
+  <link rel="stylesheet" href="/css/normalize.css">
+  <link rel="stylesheet" href="/css/bootstrap.min.css">
+  <link rel="stylesheet" href="/fontawesome/css/all.css">
+  <link rel="stylesheet" href="/css/main.css">
 </head>
 
 <body>
@@ -22,7 +22,7 @@
     <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="https://browsehappy.com/">upgrade your browser</a> to improve your experience and security.</p>
     <![endif]-->
     <nav class="navbar navbar-expand-md navbar-light bg-light sticky-top">
-      <a class="navbar-brand" href="index.html"><img src="img/logo_150x46.png" width="150" height="46"/></a>
+      <a class="navbar-brand" href="/index.html"><img src="img/logo_150x46.png" width="150" height="46"/></a>
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#menu" aria-controls="menu" aria-expanded="false" aria-label="Desplegar menú">
         <span class="navbar-toggler-icon"></span>
       </button>
@@ -33,7 +33,7 @@
             <a class="nav-link" href="#">Inicio <span class="sr-only">(actual)</span></a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="catalogo/articulos.html">Catálogo</a>
+            <a class="nav-link" href="/catalogo/articulos.html">Catálogo</a>
           </li>
           <!-- menu administradores -->
           <li class="nav-item dropdown">
@@ -42,6 +42,7 @@
             </a>
             <div class="dropdown-menu" aria-labelledby="navbarCompras">
               <a class="dropdown-item" href="/compras/index.html">Órdenes de Compra</a>
+              <a class="dropdown-item" href="/compras/procesar.html">Procesar Pendientes</a>
             </div>
           </li>
           <li class="nav-item dropdown">
@@ -49,10 +50,13 @@
               Depósito
             </a>
             <div class="dropdown-menu" aria-labelledby="navbarDeposito">
-              <a class="dropdown-item" href="#">Action</a>
-              <a class="dropdown-item" href="#">Another action</a>
+              <a class="dropdown-item" href="/deposito/index.html">Almacén</a>
+              <a class="dropdown-item" href="/deposito/almacenar.html">Almacenar artículo</a>
+              <a class="dropdown-item" href="/deposito/retirar.html">Retirar artículo</a>
               <div class="dropdown-divider"></div>
-              <a class="dropdown-item" href="#">Something else here</a>
+              <a class="dropdown-item" href="/deposito/pedidos.html">Pedidos a Completar</a>
+              <div class="dropdown-divider"></div>
+              <a class="dropdown-item" href="/deposito/ingresaroc.html">Ingresar Órden de Compra</a>
             </div>
           </li>
           <li class="nav-item dropdown">
@@ -95,7 +99,7 @@
         <div class="container">
           <h1 class="display-4">¡Bienvenidos!</h1>
           <p class="lead">En Das Verrückte Lagerhaus usted podrá encontrar todos los artículos que necesita para satisfacer las necesidades de su empresa.<br/>
-            <a href="login.html">Inicie sesión</a> con su usuario, realice su pedido y pronto lo estará recibiendo en el domicilio de su elección.<br/>
+            <a href="/login.html">Inicie sesión</a> con su usuario, realice su pedido y pronto lo estará recibiendo en el domicilio de su elección.<br/>
             ¡Agradecemos que nos haya elegido y esperamos que disfrute su compra!</p>
             <hr class="my-4">
             <p>Si usted aún no cuenta con un usuario, comuníquese telefónicamente con nuestro área de Administración para solicitar la generación del mismo o escríbanos a <a href="mailto:administracion@dasverrucktelagerhaus.com">administracion@dasverrucktelagerhaus.com</a>.</p>
@@ -112,46 +116,46 @@
               <h3 class="article-title">Articulo 1</h3>
               <p class="description">Descripcion del articulo completa</p>
               <p class="price-tag">$99.00</p>
-              <p><a class="btn btn-secondary" href="catalogo/articulo.html?id=[aid]" role="button">Ver más »</a></p>
+              <p><a class="btn btn-secondary" href="/catalogo/articulo.html?id=[aid]" role="button">Ver más »</a></p>
             </div>
             <div class="col-xs-12 col-sm-6 col-lg-3">
               <h3 class="article-title">Articulo 2</h3>
               <p class="description">Descripcion del articulo completa</p>
               <p class="price-tag">$99.00</p>
-              <p><a class="btn btn-secondary" href="catalogo/articulo.html?id=[aid]" role="button">Ver más »</a></p>
+              <p><a class="btn btn-secondary" href="/catalogo/articulo.html?id=[aid]" role="button">Ver más »</a></p>
             </div>
             <div class="col-xs-12 col-sm-6 col-lg-3">
               <h3 class="article-title">Articulo 3</h3>
               <p class="description">Descripcion del articulo completa</p>
               <p class="price-tag">$99.00</p>
-              <p><a class="btn btn-secondary" href="catalogo/articulo.html?id=[aid]" role="button">Ver más »</a></p>
+              <p><a class="btn btn-secondary" href="/catalogo/articulo.html?id=[aid]" role="button">Ver más »</a></p>
             </div>
             <div class="col-xs-12 col-sm-6 col-lg-3">
               <h3 class="article-title">Articulo 4</h3>
               <p class="description">Descripcion del articulo completa</p>
               <p class="price-tag">$99.00</p>
-              <p><a class="btn btn-secondary" href="catalogo/articulo.html?id=[aid]" role="button">Ver más »</a></p>
+              <p><a class="btn btn-secondary" href="/catalogo/articulo.html?id=[aid]" role="button">Ver más »</a></p>
             </div>
           </div>
           <hr>
           <div class="d-flex flex-row-reverse">
-           <a class="btn btn-primary" href="catalogo/articulos.html" role="button">Ver todos »</a>
+           <a class="btn btn-primary" href="/catalogo/articulos.html" role="button">Ver todos »</a>
          </div>
        </section>
        <section id="clientes">
         <h2 class="title">Nuestros clientes</h2>
         <div class="row">
           <div class="col-xs-12 col-sm-6 col-lg-3">
-            <img src="img/sponsor-1_300.png" class="img-thumbnail">
+            <img src="/img/sponsor-1_300.png" class="img-thumbnail">
           </div>
           <div class="col-xs-12 col-sm-6 col-lg-3">
-            <img src="img/sponsor-2_300.png" class="img-thumbnail">
+            <img src="/img/sponsor-2_300.png" class="img-thumbnail">
           </div>
           <div class="col-xs-12 col-sm-6 col-lg-3">
-            <img src="img/sponsor-3_300.png" class="img-thumbnail">
+            <img src="/img/sponsor-3_300.png" class="img-thumbnail">
           </div>
           <div class="col-xs-12 col-sm-6 col-lg-3">
-            <img src="img/sponsor-4_300.png" class="img-thumbnail">
+            <img src="/img/sponsor-4_300.png" class="img-thumbnail">
           </div>
         </div>
       </section>
@@ -195,10 +199,10 @@
             <p>© Das Verrückte Lagerhaus 2017-2018</p>   
           </div>
         </footer>
-        <script src="js/vendor/modernizr-3.6.0.min.js"></script>
-        <script src="js/vendor/jquery-3.3.1.min.js"></script>
-        <script src="js/vendor/bootstrap.min.js"></script>
-        <script src="js/plugins.js"></script>
-        <script src="js/main.js"></script>
+        <script src="/js/vendor/modernizr-3.6.0.min.js"></script>
+        <script src="/js/vendor/jquery-3.3.1.min.js"></script>
+        <script src="/js/vendor/bootstrap.bundle.min.js"></script>
+        <script src="/js/plugins.js"></script>
+        <script src="/js/main.js"></script>
       </body>
       </html>

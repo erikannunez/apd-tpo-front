@@ -1,6 +1,6 @@
 $(function(){
 
-	console.log("ready");
+	$('[data-toggle="tooltip"]').tooltip();
 
 	$('#addToCart').on('show.bs.modal', function (e) {
   		var btn = $(e.relatedTarget);

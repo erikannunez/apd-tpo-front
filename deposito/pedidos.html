@@ -50,10 +50,13 @@
               Depósito
             </a>
             <div class="dropdown-menu" aria-labelledby="navbarDeposito">
-              <a class="dropdown-item" href="#">Action</a>
-              <a class="dropdown-item" href="#">Another action</a>
+              <a class="dropdown-item" href="/deposito/index.html">Almacén</a>
+              <a class="dropdown-item" href="/deposito/almacenar.html">Almacenar artículo</a>
+              <a class="dropdown-item" href="/deposito/retirar.html">Retirar artículo</a>
               <div class="dropdown-divider"></div>
-              <a class="dropdown-item" href="#">Something else here</a>
+              <a class="dropdown-item" href="/deposito/pedidos.html">Pedidos a Completar</a>
+              <div class="dropdown-divider"></div>
+              <a class="dropdown-item" href="/deposito/ingresaroc.html">Ingresar Órden de Compra</a>
             </div>
           </li>
           <li class="nav-item dropdown">
@@ -91,64 +94,93 @@
       </div>
     </nav>     
     <main role="main" class="container">
-      <section id="compras">
-       <nav aria-label="breadcrumb">
-        <ol class="breadcrumb">
-          <li class="breadcrumb-item"><a href="#">Compras</a></li>
-          <li class="breadcrumb-item active" aria-current="page">Procesar Pendientes</li>
-        </ol>
-      </nav>
-      <h2 class="title text-muted">Procesar OC Pendientes</h2>
-      <div class="row">
-        <div class="col">
-          <p>Si usted desea procesar manualmente las Órdenes de Compra que se encuentran en estado pendiente, seleccione la opción que se encuentra a continuación.</p>
-          <p><a id="procesarOC" href="#" class="btn btn-primary">Procesar Órdenes de Compra Pendientes</a></p>
+      <section id="deposito-pedidos">
+        <nav aria-label="breadcrumb">
+          <ol class="breadcrumb">
+            <li class="breadcrumb-item"><a href="#">Depósito</a></li>
+            <li class="breadcrumb-item active" aria-current="page">Pedidos a Completar</li>
+          </ol>
+        </nav>
+        <h2 class="title text-muted">Pedidos a Completar</h2>
+        <div class="table-responsive">
+          <table class="table">
+            <thead class="thead-light">
+              <tr>
+                <th scope="col" class="col-md-1">ID</th>
+                <th scope="col" class="col-md-2">Estado</th>                
+                <th scope="col" class="col-md-2">Fecha</th>
+                <th scope="col" class="col-md-6">Cliente</th>
+                <th scope="col" class="col-md-1 text-center">Ver</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr class="cart-item">
+                <td class="item-id">1</td>
+                <td class="item-status"><span class="badge badge-pill badge-info">Verificado</span></td>
+                <td class="item-date">10/06/2018</td>
+                <td class="item-consumer">Juan Pérez</td>
+                
+                <td class="text-center">
+                  <a class="item-open text-success" href="/deposito/pedido.html?pid=1"><i class="fas fa-eye"></i></a>
+                </td>
+              </tr>             
+              <tr class="cart-item">
+                <td class="item-id">2</td>
+                <td class="item-status"><span class="badge badge-pill badge-info">Verificado</span></td>
+                <td class="item-date">10/06/2018</td>
+                <td class="item-consumer">Roberta Gómez</td> 
+                
+                <td class="text-center">
+                  <a class="item-open text-success" href="/deposito/pedido.html?pid=2"><i class="fas fa-eye"></i></a>
+                </td>
+              </tr>
+            </tbody>
+          </table>  
         </div>
-      </div>
-    </section>
-  </main>
+      </section>
+    </main>
 
-  <footer class="container-fluid">
-    <div class="container">
-      <div class="row">
-        <div class="col-xs-12 col-lg-4">
-          <p><strong>Das Verrückte Lagerhaus</strong><p>
-            <p>
-              Lima 775 - C1073AAO<br/> 
-              Ciudad Autónoma de Buenos Aires<br/>
-              <a href="mailto:info@dasverrucktelagerhaus.com">info@dasverrucktelagerhaus.com</a><br/>
-              Tel: 0800-122-8233 / (5411) 4000-7600</p>
-            </div>
-            <div class="col-xs-12 col-lg-4">
-              <p><strong>Aplicaciones Distribuidas</strong>
-                <p>1° Cuatrimestre 2018</p>
-                <strong>Profesores</strong>
-                <ul>
-                  <li>Godio, Claudio</li>
-                  <li>Tam, Juan</li>
-                </ul>
-              </p>
-            </div>
-            <div class="col-xs-12 col-lg-4">
-              <p><strong>Integrantes</strong><br/>
-                Grupo Nro. 9
-                <ul>
-                  <li>Battaglino, Agustín</li>
-                  <li>Fels, Francisco</li>
-                  <li>Melaragno, Mariel</li>
-                  <li>Nuñez, Erica</li>
-                </ul>
-              </p>
-            </div>
-          </div>    
-          <hr/>
-          <p>© Das Verrückte Lagerhaus 2017-2018</p>   
-        </div>
-      </footer>
-      <script src="/js/vendor/modernizr-3.6.0.min.js"></script>
-      <script src="/js/vendor/jquery-3.3.1.min.js"></script>
-      <script src="/js/vendor/bootstrap.bundle.min.js"></script>
-      <script src="/js/plugins.js"></script>
-      <script src="/js/main.js"></script>
-    </body>
-    </html>
+    <footer class="container-fluid">
+      <div class="container">
+        <div class="row">
+          <div class="col-xs-12 col-lg-4">
+            <p><strong>Das Verrückte Lagerhaus</strong><p>
+              <p>
+                Lima 775 - C1073AAO<br/> 
+                Ciudad Autónoma de Buenos Aires<br/>
+                <a href="mailto:info@dasverrucktelagerhaus.com">info@dasverrucktelagerhaus.com</a><br/>
+                Tel: 0800-122-8233 / (5411) 4000-7600</p>
+              </div>
+              <div class="col-xs-12 col-lg-4">
+                <p><strong>Aplicaciones Distribuidas</strong>
+                  <p>1° Cuatrimestre 2018</p>
+                  <strong>Profesores</strong>
+                  <ul>
+                    <li>Godio, Claudio</li>
+                    <li>Tam, Juan</li>
+                  </ul>
+                </p>
+              </div>
+              <div class="col-xs-12 col-lg-4">
+                <p><strong>Integrantes</strong><br/>
+                  Grupo Nro. 9
+                  <ul>
+                    <li>Battaglino, Agustín</li>
+                    <li>Fels, Francisco</li>
+                    <li>Melaragno, Mariel</li>
+                    <li>Nuñez, Erica</li>
+                  </ul>
+                </p>
+              </div>
+            </div>    
+            <hr/>
+            <p>© Das Verrückte Lagerhaus 2017-2018</p>   
+          </div>
+        </footer>
+        <script src="/js/vendor/modernizr-3.6.0.min.js"></script>
+        <script src="/js/vendor/jquery-3.3.1.min.js"></script>
+        <script src="/js/vendor/bootstrap.bundle.min.js"></script>
+        <script src="/js/plugins.js"></script>
+        <script src="/js/main.js"></script>
+      </body>
+      </html>
