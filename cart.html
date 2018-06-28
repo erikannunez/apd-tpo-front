@@ -1,0 +1,165 @@
+<!doctype html>
+<html class="no-js" lang="es">
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  <title>Catálogo de Artículos | Das Verrückte Lagerhaus</title>
+  <meta name="description" content="TPO de la materia Aplicaciones Distribuidas.">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
+  <link rel="icon" href="/favicon.ico" type="image/x-icon">
+  <link rel="manifest" href="/site.webmanifest">
+  <link rel="apple-touch-icon" href="/icon.png">
+  <link rel="stylesheet" href="/css/normalize.css">
+  <link rel="stylesheet" href="/css/bootstrap.min.css">
+  <link rel="stylesheet" href="/fontawesome/css/all.css">
+  <link rel="stylesheet" href="/css/main.css">
+</head>
+
+<body>
+  <!--[if lte IE 9]>
+    <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="https://browsehappy.com/">upgrade your browser</a> to improve your experience and security.</p>
+    <![endif]-->
+    <nav class="navbar navbar-expand-md navbar-light bg-light sticky-top">
+      <a class="navbar-brand" href="/index.html"><img src="/img/logo_150x46.png" width="150" height="46"/></a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#menu" aria-controls="menu" aria-expanded="false" aria-label="Desplegar menú">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="menu">
+        <ul class="navbar-nav mr-auto">
+          <li class="nav-item active">
+            <a class="nav-link" href="#">Inicio <span class="sr-only">(current)</span></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="/catalogo/articulos.html">Catálogo</a>
+          </li>
+
+        </ul>
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="/login.html"><span class="d-md-none">Ingresar</span><i class="fas fa-user-circle fa-2x d-none d-md-block"></i></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="/cart.html"><span class="d-md-none">Carrito</span><i class="fas fa-shopping-cart fa-2x d-none d-md-block"></i></a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+
+    <main role="main" class="container">
+
+      <section id="cart">
+        <h2 class="title">Su carrito</h2>
+        <form action="confirmCart.jsp" method="post" enctype="multipart/form-data" class="row">
+          <div class="table-responsive">
+            <table class="table">
+              <tfoot>
+                <tr>
+                  <th scope="row" colspan="4">Total</th>
+                  <th scope="row" class="text-center">$110.00</th>
+                </tr>
+              </tfoot>
+              <thead class="thead-light">
+                <tr>
+                  <th scope="col" class="col-md-4">Artículo</th>
+                  <th scope="col" class="col-md-2 text-center">Precio</th>
+                  <th scope="col" class="col-md-1 text-center">Cantidad</th>
+                  <th scope="col" class="col-md-2 text-center">Subtotal</th>
+                  <th scope="col" class="col-md-1 text-center">Eliminar</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr class="cart-item" id="aid-1">
+                  <td class="item-title">Artículo 1</td>
+                  <td class="item-price text-center">$99.00</td>
+                  <td class="item-quantity text-center"><input type="number" step="1" min="1" value="1" class="form-control"/></td>
+                  <td class="item-subtotal text-center">$99.00</td>
+                  <td class="text-center">
+                    <a class="item-remove" href="#" data-aid="1" data-toggle="modal" data-target="#removeFromCart"><i class="fas fa-trash-alt"></i></a>
+                  </td>
+                </tr>
+                <tr class="cart-item" id="aid-2">
+                  <td class="item-title">Artículo 2</td>
+                  <td class="item-price text-center">$11.00</td>
+                  <td class="item-quantity text-center"><input type="number" step="1" min="1" value="1" class="form-control"/></td>
+                  <td class="item-subtotal text-center">$11.00</td>
+                  <td class="text-center">
+                    <a class="item-remove" href="#" data-aid="2" data-toggle="modal" data-target="#removeFromCart"><i class="fas fa-trash-alt"></i></a>
+                  </td>
+                </tr>                
+              </tbody>
+            </table>
+          </form>
+        </div>
+        <hr class="mb-4">
+        <a class="btn btn-primary btn-lg btn-block" href="/checkout.html">Continuar al checkout</a>
+      </section>
+      <!--Modal-->
+      <div class="modal fade" id="removeFromCart" tabindex="-1" role="dialog" aria-labelledby="modalTitle" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="modalTitle">Eliminar item</h5>
+              <button type="button" class="close" data-dismiss="modal" aria-label="Cerrar">
+                <span aria-hidden="true">&times;</span>
+              </button>
+            </div>
+            <div class="modal-body">
+              <p>¿Está seguro que desea eliminar el articulo <span class="article-name text-muted">{articulo}</span> del carrito?</p>
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" data-dismiss="modal">Cancelar</button>
+              <button id="removeConfirm" type="button" class="btn btn-primary" data-aid="">Confirmar</button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </main>
+
+    <footer class="container-fluid">
+      <div class="container">
+        <div class="row">
+          <div class="col-xs-12 col-lg-4">
+            <p><strong>Das Verrückte Lagerhaus</strong><p>
+              <p>
+                Lima 775 - C1073AAO<br/> 
+                Ciudad Autónoma de Buenos Aires<br/>
+                <a href="mailto:info@dasverrucktelagerhaus.com">info@dasverrucktelagerhaus.com</a><br/>
+                Tel: 0800-122-8233 / (5411) 4000-7600</p>
+              </div>
+              <div class="col-xs-12 col-lg-4">
+                <p><strong>Aplicaciones Distribuidas</strong>
+                  <p>1° Cuatrimestre 2018</p>
+                  <strong>Profesores</strong>
+                  <ul>
+                    <li>Godio, Claudio</li>
+                    <li>Tam, Juan</li>
+                  </ul>
+                </p>
+              </div>
+              <div class="col-xs-12 col-lg-4">
+                <p><strong>Integrantes</strong><br/>
+                  Grupo Nro. 9
+                  <ul>
+                    <li>Battaglino, Agustín</li>
+                    <li>Fels, Francisco</li>
+                    <li>Melaragno, Mariel</li>
+                    <li>Nuñez, Erica</li>
+                  </ul>
+                </p>
+              </div>
+            </div>    
+            <hr/>
+            <p>© Das Verrückte Lagerhaus 2017-2018</p>   
+          </div>
+        </footer>
+        <script src="/js/vendor/modernizr-3.6.0.min.js"></script>
+        <script src="/js/vendor/jquery-3.3.1.min.js"></script>
+        <script src="/js/vendor/bootstrap.min.js"></script>
+        <script src="/js/plugins.js"></script>
+        <script src="/js/main.js"></script>
+      </body>
+      </html>
